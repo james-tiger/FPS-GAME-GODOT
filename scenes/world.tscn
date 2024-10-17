@@ -1,0 +1,171 @@
+[gd_scene load_steps=20 format=3 uid="uid://h02wqhshw1i0"]
+
+[ext_resource type="Script" path="res://scripts/world.gd" id="1_ec4fh"]
+[ext_resource type="Texture2D" uid="uid://b0j8fjcsovxno" path="res://modles/textures/gray_rocks_diff_4k.jpg" id="2_bc3r3"]
+[ext_resource type="Texture2D" uid="uid://bq3w2esncwgkr" path="res://modles/textures/gray_rocks_disp_4k.png" id="3_42blb"]
+[ext_resource type="Script" path="res://scripts/ground.gd" id="4_mex42"]
+[ext_resource type="PackedScene" uid="uid://c3ayn05arb6d8" path="res://scenes/node_3d.tscn" id="4_o8b4h"]
+[ext_resource type="PackedScene" uid="uid://dt64x6jsr2ok7" path="res://scenes/wall.tscn" id="5_n6ywl"]
+[ext_resource type="PackedScene" uid="uid://ckciaiwwtbl42" path="res://node_3d.tscn" id="7_w7vtu"]
+[ext_resource type="PackedScene" uid="uid://jgxjiww8dq1q" path="res://scenes/enemy.tscn" id="8_xvslm"]
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_jpv8p"]
+vertices = PackedVector3Array(-49.5, 0.456202, -49.5, -49.5, 0.456202, 49.5, 49.5, 0.456202, 49.5, 49.5, 0.456202, -49.5)
+polygons = [PackedInt32Array(3, 2, 0), PackedInt32Array(0, 2, 1)]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ayh12"]
+albedo_texture = ExtResource("2_bc3r3")
+metallic = 1.0
+metallic_specular = 1.0
+metallic_texture = ExtResource("3_42blb")
+roughness_texture = ExtResource("3_42blb")
+normal_enabled = true
+normal_texture = ExtResource("3_42blb")
+uv1_scale = Vector3(20, 20, 20)
+uv2_scale = Vector3(50, 50, 50)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_oeu6b"]
+lightmap_size_hint = Vector2i(502, 502)
+material = SubResource("StandardMaterial3D_ayh12")
+size = Vector2(100, 100)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_v0fax"]
+
+[sub_resource type="Gradient" id="Gradient_1hqru"]
+offsets = PackedFloat32Array(0, 0.169811, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0.518868, 0.518868, 0.518868, 1, 1, 1, 1, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_ysdag"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_igy42"]
+in_3d_space = true
+color_ramp = SubResource("Gradient_1hqru")
+noise = SubResource("FastNoiseLite_ysdag")
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_qvwad"]
+sky_top_color = Color(0, 0, 0, 1)
+sky_curve = 1.4366e-05
+sky_cover = SubResource("NoiseTexture2D_igy42")
+sky_cover_modulate = Color(0.461843, 0.760748, 1, 1)
+sun_angle_max = 0.0
+sun_curve = 0.579561
+
+[sub_resource type="Sky" id="Sky_0cigh"]
+sky_material = SubResource("ProceduralSkyMaterial_qvwad")
+
+[sub_resource type="Environment" id="Environment_g631c"]
+background_mode = 2
+background_energy_multiplier = 0.42
+sky = SubResource("Sky_0cigh")
+tonemap_mode = 3
+tonemap_exposure = 0.45
+tonemap_white = 16.0
+ssao_radius = 9.93
+fog_enabled = true
+fog_light_energy = 0.42
+volumetric_fog_enabled = true
+volumetric_fog_albedo = Color(0.627307, 0.000591623, 0.502922, 1)
+volumetric_fog_emission = Color(0.986219, 0, 0.311277, 1)
+adjustment_brightness = 0.71
+adjustment_contrast = 1.29
+adjustment_saturation = 3.81
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_xup5g"]
+
+[node name="world" type="Node3D"]
+script = ExtResource("1_ec4fh")
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+navigation_mesh = SubResource("NavigationMesh_jpv8p")
+
+[node name="ground" type="MeshInstance3D" parent="NavigationRegion3D"]
+mesh = SubResource("PlaneMesh_oeu6b")
+skeleton = NodePath("../..")
+script = ExtResource("4_mex42")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/StaticBody3D"]
+transform = Transform3D(100, 0, 0, 0, 0.111, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_v0fax")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+
+[node name="Tree" parent="." instance=ExtResource("4_o8b4h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.2789, 0, -44.1662)
+
+[node name="WALL" parent="." instance=ExtResource("5_n6ywl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.8842, 0, -48.472)
+
+[node name="WALL2" parent="." instance=ExtResource("5_n6ywl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.2302, 0, -48.472)
+
+[node name="WALL3" parent="." instance=ExtResource("5_n6ywl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.573097, 0, -48.472)
+
+[node name="WALL4" parent="." instance=ExtResource("5_n6ywl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.1343, 0, -48.472)
+
+[node name="WALL5" parent="." instance=ExtResource("5_n6ywl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.7245, 0, -48.472)
+
+[node name="WALL6" parent="." instance=ExtResource("5_n6ywl")]
+transform = Transform3D(-0.0157248, 0, 0.999876, 0, 1, 0, -0.999876, 0, -0.0157248, -46.9801, 0.280704, -37.4916)
+
+[node name="WALL7" parent="." instance=ExtResource("5_n6ywl")]
+transform = Transform3D(-0.0157248, 0, 0.999876, 0, 1, 0, -0.999876, 0, -0.0157248, -46.9801, 0.280704, -17.7185)
+
+[node name="WALL8" parent="." instance=ExtResource("5_n6ywl")]
+transform = Transform3D(-0.0157248, 0, 0.999876, 0, 1, 0, -0.999876, 0, -0.0157248, -46.7617, 0.280704, 2.08447)
+
+[node name="WALL9" parent="." instance=ExtResource("5_n6ywl")]
+transform = Transform3D(-0.0157248, 0, 0.999876, 0, 1, 0, -0.999876, 0, -0.0157248, -46.7617, 0.280704, 21.91)
+
+[node name="WALL10" parent="." instance=ExtResource("5_n6ywl")]
+transform = Transform3D(-0.0157248, 0, 0.999876, 0, 1, 0, -0.999876, 0, -0.0157248, -46.7617, 0.280704, 41.5246)
+
+[node name="WALL11" parent="." instance=ExtResource("5_n6ywl")]
+transform = Transform3D(-0.999989, 0, -0.00471241, 0, 1, 0, 0.00471241, 0, -0.999989, -35.6967, 0.280706, 50.168)
+
+[node name="WALL12" parent="." instance=ExtResource("5_n6ywl")]
+transform = Transform3D(-0.999989, 0, -0.00471241, 0, 1, 0, 0.00471241, 0, -0.999989, -16.1589, 0.280706, 50.168)
+
+[node name="WALL13" parent="." instance=ExtResource("5_n6ywl")]
+transform = Transform3D(-0.999989, 0, -0.00471241, 0, 1, 0, 0.00471241, 0, -0.999989, 3.54661, 0.280706, 50.168)
+
+[node name="WALL14" parent="." instance=ExtResource("5_n6ywl")]
+transform = Transform3D(-0.999989, 0, -0.00471241, 0, 1, 0, 0.00471241, 0, -0.999989, 23.0487, 0.280706, 50.168)
+
+[node name="WALL15" parent="." instance=ExtResource("5_n6ywl")]
+transform = Transform3D(-0.999989, 0, -0.00471241, 0, 1, 0, 0.00471241, 0, -0.999989, 42.6986, 0.280706, 50.168)
+
+[node name="WALL16" parent="." instance=ExtResource("5_n6ywl")]
+transform = Transform3D(0.00830773, 0, -0.999966, 0, 1, 0, 0.999966, 0, 0.00830773, 49.6144, 0.280706, 6.00522)
+
+[node name="WALL17" parent="." instance=ExtResource("5_n6ywl")]
+transform = Transform3D(0.00830773, 0, -0.999966, 0, 1, 0, 0.999966, 0, 0.00830773, 49.6144, 0.280706, -13.5959)
+
+[node name="WALL18" parent="." instance=ExtResource("5_n6ywl")]
+transform = Transform3D(0.00830773, 0, -0.999966, 0, 1, 0, 0.999966, 0, 0.00830773, 49.6144, 0.280706, -33.1783)
+
+[node name="WALL19" parent="." instance=ExtResource("5_n6ywl")]
+transform = Transform3D(0.00830773, 0, -0.999966, 0, 1, 0, 0.999966, 0, 0.00830773, 49.6144, 0.280706, -38.4481)
+
+[node name="WALL20" parent="." instance=ExtResource("5_n6ywl")]
+transform = Transform3D(0.00830773, 0, -0.999966, 0, 1, 0, 0.999966, 0, 0.00830773, 49.6144, 0.280706, 25.6898)
+
+[node name="WALL21" parent="." instance=ExtResource("5_n6ywl")]
+transform = Transform3D(0.00830773, 0, -0.999966, 0, 1, 0, 0.999966, 0, 0.00830773, 49.6144, 0.280706, 39.6176)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_g631c")
+camera_attributes = SubResource("CameraAttributesPractical_xup5g")
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.899985, -0.434779, 0.0315155, 0.435898, 0.896849, -0.0752023, 0.00443174, 0.0814185, 0.99667, 0, 7.25611, 0)
+
+[node name="Enemy" parent="." node_paths=PackedStringArray("player_target") instance=ExtResource("8_xvslm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8.37763)
+player_target = NodePath("../Node3D")
+
+[node name="Node3D" parent="." instance=ExtResource("7_w7vtu")]
