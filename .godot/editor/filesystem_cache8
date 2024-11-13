@@ -1,0 +1,111 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1731455111
+Camera.gd::GDScript::-1::1716315832::0::1::::<>Camera3D<>::
+enemy.gd::GDScript::-1::1716315832::0::1::::<>RigidBody3D<>::
+enemy.tscn::PackedScene::266837019975161596::1731454678::0::1::::<><>::res://enemy.gd<>uid://bif7scsaoyuap::::res://modles/new_zombie/zombie_prisoner_diffuse.png<>uid://co8ioh5e3lrlb::::res://modles/new_zombie/zombie_prisoner_normal.png
+export_presets.cfg::TextFile::-1::1716315832::0::1::::<><>::
+full.png::CompressedTexture2D::3104450594273613073::1716315832::1731447550::1::::<><>::
+icon.svg::CompressedTexture2D::982103501590736988::1716315832::1731447550::1::::<><>::
+intro_game.tscn::PackedScene::3505800833843456287::1731454678::0::1::::<><>::res://scripts/intro_game.gd<>uid://c53yqfeu4gerx::::res://Intro/image swat.jpg<>uid://k7vmpxryf16m::::res://Intro/intro 2.jpg<>uid://cxsc405m1jbac::::res://Intro/intro 3.jpg<>uid://ba18o3m5uhn58::::res://Intro/intro4.jpg
+menu.tscn::PackedScene::6972061654510046784::1731454678::0::1::::<><>::uid://bn48v2mdby7nf::::res://assets/Ubuntu-M.ttf<>res://scripts/button.gd<>res://scripts/button_2.gd
+node_3d.gd::GDScript::-1::1731449127::0::1::::<>Node3D<>::
+node_3d.tscn::PackedScene::5479344750414298265::1731454678::0::1::::<><>::res://player.gd<>res://node_3d.gd<>uid://d2i1clxy4n3i::::res://enemy.tscn<>uid://cvy1io8hoso2::::res://assets/pistol_0.png<>uid://cj1jqktuasw86::::res://assets/pistol_1.png<>uid://5wgq6fdynnmo::::res://assets/762x39 Single Isolated WAV.wav<>uid://0oc3jutq2mk6::::res://assets/pistol_2.png<>uid://dagj2gp0b4x1i::::res://assets/9mm Pistol Dry Fire.wav<>uid://cntslapbyii88::::res://assets/pistol_3.png<>uid://bxcl6r7er3c8l::::res://assets/pistol_4.png<>uid://cosi2kbgi3w36::::res://assets/pistol_5.png<>uid://bhi2bj4bv0gdd::::res://assets/pistol_6.png<>uid://c5vvixni6t856::::res://assets/9mm Pistol Rack Part 1.wav<>uid://bbgh0vlj6xpi0::::res://assets/9mm Pistol Reload 1.wav<>uid://bcpppumyh35rj::::res://assets/9mm Pistol Rack Part 2.wav<>uid://p28swbpm4prs::::res://assets/9mm Pistol Reload 2.wav<>uid://dvm1eb2a3t11f::::res://assets/9mm Pistol Rack Full.wav<>uid://i1xsfxvo8ctf::::res://UI.tscn<>uid://vasgb0tk8ddd::::res://wall.tscn<>res://functions/main.gd
+pistol.tscn::PackedScene::853522455529753660::1731454678::0::1::::<><>::uid://dxe12rmlvwjfw::::res://assets/pistol.glb
+player.gd::GDScript::-1::1716315832::0::1::::<>CharacterBody3D<>::
+wall.tscn::PackedScene::1475069429053303357::1731454678::0::1::::<><>::uid://c6gjrt1mew7jr::::res://modles/Walls/damaged_wall.glb
+world.tscn::PackedScene::3094507184562709666::1731454678::0::1::::<><>::uid://ckciaiwwtbl42::::res://node_3d.tscn
+UI.gd::GDScript::-1::1716315832::0::1::::<>Control<>::
+UI.tscn::PackedScene::616613504955134939::1716315832::0::1::::<><>::res://UI.gd<>uid://crc6twp0rgprx::::res://assets/ammo.png<>uid://6i2c06kqgnao::::res://assets/bullet.png
+zombie.gd::GDScript::-1::1731450360::0::1::::<>RigidBody3D<>::
+::res://assets/::1731448460
+9mm Pistol Dry Fire.wav::AudioStreamWAV::7172243326424548528::1716315832::1731447550::1::::<><>::
+9mm Pistol Rack Full.wav::AudioStreamWAV::8659586179785512697::1716315832::1731447550::1::::<><>::
+9mm Pistol Rack Part 1.wav::AudioStreamWAV::6923149181086970343::1716315832::1731447550::1::::<><>::
+9mm Pistol Rack Part 2.wav::AudioStreamWAV::2558702649185729043::1716315832::1731447550::1::::<><>::
+9mm Pistol Reload 1.wav::AudioStreamWAV::2469466578086948205::1716315832::1731447550::1::::<><>::
+9mm Pistol Reload 2.wav::AudioStreamWAV::1110607816738913880::1716315832::1731447550::1::::<><>::
+9mm Single Isolated.wav::AudioStreamWAV::3645793197269325377::1716315832::1731447550::1::::<><>::
+762x39 Single Isolated WAV.wav::AudioStreamWAV::2151476130506144994::1716315832::1731447550::1::::<><>::
+ammo.png::CompressedTexture2D::5972097801445452085::1716315832::1731447550::1::::<><>::
+bullet.png::CompressedTexture2D::2194013466652663410::1716315832::1731447550::1::::<><>::
+pistol.glb::PackedScene::8783490735980980804::1716315832::1731447551::1::::<><>::uid://cvy1io8hoso2::::res://assets/pistol_0.png<>uid://cj1jqktuasw86::::res://assets/pistol_1.png<>uid://0oc3jutq2mk6::::res://assets/pistol_2.png<>uid://cntslapbyii88::::res://assets/pistol_3.png<>uid://bxcl6r7er3c8l::::res://assets/pistol_4.png<>uid://cosi2kbgi3w36::::res://assets/pistol_5.png<>uid://bhi2bj4bv0gdd::::res://assets/pistol_6.png
+pistol_0.png::CompressedTexture2D::185233701902600383::1716315832::1731447550::1::::<><>::
+pistol_1.png::CompressedTexture2D::5458790362865652137::1716315832::1731447550::1::::<><>::
+pistol_2.png::CompressedTexture2D::1783794320214485979::1716315832::1731447550::1::::<><>::
+pistol_3.png::CompressedTexture2D::5725632084860407619::1716315832::1731447550::1::::<><>::
+pistol_4.png::CompressedTexture2D::4005617031943705445::1716315832::1731447550::1::::<><>::
+pistol_5.png::CompressedTexture2D::5793178457332031375::1716315832::1731447550::1::::<><>::
+pistol_6.png::CompressedTexture2D::2895899273374372857::1716315832::1731447550::1::::<><>::
+Ubuntu-M.ttf::FontFile::3360785205095281903::1716315832::1731447550::1::::<><>::
+::res://functions/::1731448460
+main.gd::GDScript::-1::1716315832::0::1::::<>Node<>::
+::res://Intro/::1731448651
+image swat.jpg::CompressedTexture2D::6937795303913392489::1728789306::1731448650::1::::<><>::
+intro4.jpg::CompressedTexture2D::2442124657756154761::1728789623::1731448649::1::::<><>::
+intro 2.jpg::CompressedTexture2D::769245835070646810::1728789489::1731448649::1::::<><>::
+intro 3.jpg::CompressedTexture2D::6424518152651008622::1728789567::1731448651::1::::<><>::
+::res://modles/::1731457004
+::res://modles/city_modles/::1731457355
+apocalyptic_city.glb::PackedScene::2786395812354806025::1731457310::1731457355::1::::<><>::uid://cnocfd1mf7lx5::::res://modles/city_modles/apocalyptic_city_0.png<>uid://12tftnl5el4b::::res://modles/city_modles/apocalyptic_city_1.png<>uid://dw2mi4kjnyiwu::::res://modles/city_modles/apocalyptic_city_2.png<>uid://dlgtu23v5bwvf::::res://modles/city_modles/apocalyptic_city_3.png<>uid://12rgyf122oai::::res://modles/city_modles/apocalyptic_city_4.png<>uid://blqjstj3fknt3::::res://modles/city_modles/apocalyptic_city_5.png<>uid://cyk5851nyqgo8::::res://modles/city_modles/apocalyptic_city_6.png<>uid://bnnwja0hvm41k::::res://modles/city_modles/apocalyptic_city_7.png<>uid://bwy3di4ucqx7k::::res://modles/city_modles/apocalyptic_city_8.png<>uid://tcvy0pi4lhe::::res://modles/city_modles/apocalyptic_city_9.png<>uid://blvgsadm4ujps::::res://modles/city_modles/apocalyptic_city_10.png<>uid://b3j7al6qc8hnl::::res://modles/city_modles/apocalyptic_city_11.jpg<>uid://bo7c2m63qdcs6::::res://modles/city_modles/apocalyptic_city_12.jpg<>uid://boy7787sq2tkj::::res://modles/city_modles/apocalyptic_city_13.jpg<>uid://dsvpntxqchh05::::res://modles/city_modles/apocalyptic_city_14.png<>uid://c7snp4y3ni1rl::::res://modles/city_modles/apocalyptic_city_15.png<>uid://cxd8wgnfk1kel::::res://modles/city_modles/apocalyptic_city_16.png<>uid://c6nf6mg753amw::::res://modles/city_modles/apocalyptic_city_17.png<>uid://cfcsgrffnoq8b::::res://modles/city_modles/apocalyptic_city_18.jpg<>uid://cmgcmj70wvhtc::::res://modles/city_modles/apocalyptic_city_19.jpg<>uid://b5jayohft3gob::::res://modles/city_modles/apocalyptic_city_20.jpg<>uid://dljgkjrmpbkv3::::res://modles/city_modles/apocalyptic_city_21.jpg<>uid://13aenbc20xf::::res://modles/city_modles/apocalyptic_city_22.jpg<>uid://b0gwx1fo4wltm::::res://modles/city_modles/apocalyptic_city_23.jpg<>uid://xs2d8qsyk0kj::::res://modles/city_modles/apocalyptic_city_24.jpg<>uid://dc8s3gewm4ixg::::res://modles/city_modles/apocalyptic_city_25.jpg<>uid://dsoxny4opoq0l::::res://modles/city_modles/apocalyptic_city_26.jpg<>uid://bvgpbal71k8vu::::res://modles/city_modles/apocalyptic_city_27.jpg<>uid://cjj3ov5vbv1mm::::res://modles/city_modles/apocalyptic_city_28.jpg<>uid://b5hs7u7s0auu0::::res://modles/city_modles/apocalyptic_city_29.jpg
+apocalyptic_city_0.png::CompressedTexture2D::5714328184480660648::1731457333::1731457355::1::::<><>::
+apocalyptic_city_1.png::CompressedTexture2D::1881811704346704039::1731457333::1731457355::1::::<><>::
+apocalyptic_city_2.png::CompressedTexture2D::8759899239792509136::1731457333::1731457355::1::::<><>::
+apocalyptic_city_3.png::CompressedTexture2D::7944916398741955759::1731457334::1731457355::1::::<><>::
+apocalyptic_city_4.png::CompressedTexture2D::1881692307091820232::1731457334::1731457355::1::::<><>::
+apocalyptic_city_5.png::CompressedTexture2D::3192107618127774774::1731457334::1731457355::1::::<><>::
+apocalyptic_city_6.png::CompressedTexture2D::6479899449710220597::1731457334::1731457355::1::::<><>::
+apocalyptic_city_7.png::CompressedTexture2D::3327064446743032898::1731457334::1731457355::1::::<><>::
+apocalyptic_city_8.png::CompressedTexture2D::3981826208904590726::1731457335::1731457355::1::::<><>::
+apocalyptic_city_9.png::CompressedTexture2D::39383412858560166::1731457335::1731457355::1::::<><>::
+apocalyptic_city_10.png::CompressedTexture2D::3202246348012788580::1731457335::1731457355::1::::<><>::
+apocalyptic_city_11.jpg::CompressedTexture2D::4372231275489806153::1731457335::1731457355::1::::<><>::
+apocalyptic_city_12.jpg::CompressedTexture2D::3435294912639265123::1731457335::1731457355::1::::<><>::
+apocalyptic_city_13.jpg::CompressedTexture2D::3420611433441071169::1731457337::1731457355::1::::<><>::
+apocalyptic_city_14.png::CompressedTexture2D::8466948173815479844::1731457338::1731457355::1::::<><>::
+apocalyptic_city_15.png::CompressedTexture2D::7056860832733221317::1731457338::1731457355::1::::<><>::
+apocalyptic_city_16.png::CompressedTexture2D::6395421188014459659::1731457339::1731457355::1::::<><>::
+apocalyptic_city_17.png::CompressedTexture2D::6975892016587020014::1731457339::1731457355::1::::<><>::
+apocalyptic_city_18.jpg::CompressedTexture2D::5129018862583803203::1731457339::1731457355::1::::<><>::
+apocalyptic_city_19.jpg::CompressedTexture2D::5627637144389352780::1731457340::1731457355::1::::<><>::
+apocalyptic_city_20.jpg::CompressedTexture2D::4510708998068536421::1731457340::1731457356::1::::<><>::
+apocalyptic_city_21.jpg::CompressedTexture2D::7950301390316993222::1731457345::1731457355::1::::<><>::
+apocalyptic_city_22.jpg::CompressedTexture2D::55374127628072143::1731457346::1731457355::1::::<><>::
+apocalyptic_city_23.jpg::CompressedTexture2D::4154906262275797694::1731457348::1731457355::1::::<><>::
+apocalyptic_city_24.jpg::CompressedTexture2D::1653148678271987409::1731457348::1731457355::1::::<><>::
+apocalyptic_city_25.jpg::CompressedTexture2D::7368907434674557724::1731457349::1731457355::1::::<><>::
+apocalyptic_city_26.jpg::CompressedTexture2D::8452983537291557373::1731457350::1731457355::1::::<><>::
+apocalyptic_city_27.jpg::CompressedTexture2D::3873685225783500434::1731457351::1731457355::1::::<><>::
+apocalyptic_city_28.jpg::CompressedTexture2D::5424846587117982692::1731457351::1731457355::1::::<><>::
+apocalyptic_city_29.jpg::CompressedTexture2D::4507687789139258081::1731457353::1731457355::1::::<><>::
+::res://modles/new_zombie/::1731448567
+characterMedium.fbx::PackedScene::3564157147285392753::1572618348::1731448566::1::::<><>::
+zombie.glb::PackedScene::7413923479874379425::1727795172::1731448567::1::::<><>::uid://bif7scsaoyuap::::res://modles/new_zombie/zombie_prisoner_diffuse.png<>uid://co8ioh5e3lrlb::::res://modles/new_zombie/zombie_prisoner_normal.png
+zombie_prisoner_diffuse.png::CompressedTexture2D::2960228542499328895::1727795205::1731448565::1::::<><>::
+zombie_prisoner_normal.png::CompressedTexture2D::5824120795486623315::1727795203::1731448565::1::::<><>::
+zombie_prisoner_specular.png::CompressedTexture2D::1559134999863774371::1727795202::1731448566::1::::<><>::
+::res://modles/textures/::1731455113
+gray_rocks_diff_4k.jpg::CompressedTexture2D::4161734240798425324::1728229272::1731455113::1::::<><>::
+gray_rocks_disp_4k.png::CompressedTexture2D::3568628987785672557::1728229294::1731455113::1::::<><>::
+gray_rocks_nor_gl_4k.exr::CompressedTexture2D::5850650311873431866::1728229278::1731455112::0::::<><>::
+gray_rocks_rough_4k.exr::CompressedTexture2D::1535342401890236942::1728229290::1731455112::0::::<><>::
+::res://modles/Tree/::1731455123
+realistic_high_poly_tree_model_17_free.glb::PackedScene::9178078349245501146::1728225044::1731455123::1::::<><>::uid://dl36v7qqup0j1::::res://modles/Tree/realistic_high_poly_tree_model_17_free_0.png<>uid://cyyvt8hyleejy::::res://modles/Tree/realistic_high_poly_tree_model_17_free_1.png<>uid://2ffhaiydnqhc::::res://modles/Tree/realistic_high_poly_tree_model_17_free_2.png
+realistic_high_poly_tree_model_17_free_0.png::CompressedTexture2D::7991063342877483880::1728225092::1731455112::1::::<><>::
+realistic_high_poly_tree_model_17_free_1.png::CompressedTexture2D::6508229412918200426::1728225092::1731455112::1::::<><>::
+realistic_high_poly_tree_model_17_free_2.png::CompressedTexture2D::1905736765971764040::1728225093::1731455112::1::::<><>::
+::res://modles/Walls/::1731450658
+damaged_wall.glb::PackedScene::6961659636780886067::1728226018::1731450658::1::::<><>::uid://cedoqkesxqp4c::::res://modles/Walls/damaged_wall_0.png<>uid://m3irllg5ipb7::::res://modles/Walls/damaged_wall_1.png<>uid://dcfxsongxahah::::res://modles/Walls/damaged_wall_2.png
+damaged_wall_0.png::CompressedTexture2D::5060669018063659464::1728226043::1731450657::1::::<><>::
+damaged_wall_1.png::CompressedTexture2D::900585390271311902::1728226044::1731450657::1::::<><>::
+damaged_wall_2.png::CompressedTexture2D::7311391017962299411::1728226044::1731450657::1::::<><>::
+::res://scripts/::1731455752
+bullets.gd::GDScript::-1::1728363448::0::1::::<>RigidBody3D<>::
+bullet_spawn_point.gd::GDScript::-1::1728363244::0::1::::<>Node3D<>::
+button.gd::GDScript::-1::1731449281::0::1::::<>Button<>::
+button_2.gd::GDScript::-1::1731449399::0::1::::<>Button<>::
+enemy.gd::GDScript::-1::1728963978::0::1::::<>CharacterBody3D<>::
+ground.gd::GDScript::-1::1728243800::0::1::::<>MeshInstance3D<>::
+intro_game.gd::GDScript::-1::1728803853::0::1::::<>CanvasLayer<>::
+menu.gd::GDScript::-1::1731449037::0::1::::<>MarginContainer<>::
+zombie.gd::GDScript::-1::1731455752::0::1::::<>MeshInstance3D<>::
+world.gd::GDScript::-1::1728217423::0::1::::<>Node3D<>::

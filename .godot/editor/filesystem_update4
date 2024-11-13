@@ -1,0 +1,11 @@
+res://world.tscn
+res://node_3d.tscn
+res://menu.tscn
+res://intro_game.tscn
+res://pistol.tscn
+res://enemy.tscn
+res://zombie.gd
+res://wall.tscn
+res://scripts/zombie.gd
+res://city_map.tscn
+res://player.gd

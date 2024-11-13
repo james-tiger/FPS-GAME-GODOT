@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://g1grmcvpbg2y"]
+
+[ext_resource type="PackedScene" uid="uid://bfx0sc6b3f2vl" path="res://modles/city_modles/apocalyptic_city.glb" id="1_cq84c"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pnbrm"]
+size = Vector3(398.772, 1, 300)
+
+[node name="city_map" type="Node3D"]
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("1_cq84c")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 142.697, 0, 3.50098)
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 285.416, -1.52588e-05, -74.3631)
+shape = SubResource("BoxShape3D_pnbrm")

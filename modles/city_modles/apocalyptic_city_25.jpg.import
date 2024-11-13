@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dc8s3gewm4ixg"
+path.s3tc="res://.godot/imported/apocalyptic_city_25.jpg-98d86afd665b578a276e80c3496330e7.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "e2be2a617f1fe148815327a742257e94"
+}
+
+[deps]
+
+source_file="res://modles/city_modles/apocalyptic_city_25.jpg"
+dest_files=["res://.godot/imported/apocalyptic_city_25.jpg-98d86afd665b578a276e80c3496330e7.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0
