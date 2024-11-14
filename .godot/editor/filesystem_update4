@@ -9,3 +9,6 @@ res://wall.tscn
 res://scripts/zombie.gd
 res://city_map.tscn
 res://player.gd
+res://scripts/intro_game.gd
+res://audio_stream_player.tscn
+res://audio_stream_player.gd

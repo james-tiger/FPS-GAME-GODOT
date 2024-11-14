@@ -1,5 +1,7 @@
-CollisionShape3D
+AudioStreamPlayer3D
+AudioStreamPlayer
 Node
+CollisionShape3D
 StaticBody3D
 Area3D
 MeshInstance3D
